@@ -1,0 +1,22 @@
+git clone "link repository" = clona la repo in locale.
+
+touch README = rimuove il file README nella repo locale
+
+rm README = rimuove il file README nella repo locale.
+
+touch .gitignore = crea un file ignore nel quale possiamo indicare tutti gli elementi che necessitiamo di ignorare quando inseriamo roba nella repo.
+
+git add README = rende il file tracked 
+
+un file tracked è un file di cui git è a conoscenza, ovvero noi apportiamo delle modifiche alla repository e aggiungiamo e rimuoviamo elementi, fino a quando non rendiamo tracked tali modifiche git non ne sarà a conoscenza e li vedrà come untrucked. Per permettere che queste modifiche siano successivamente eseguite fare l'add. 
+
+
+git status -s = visualizza lo stato delle modifiche effettuate sulla repo, specificando che tipo di operazione è stata eseguita se eliminazione, add, o se è trucked o untrucked. 
+
+git -commit = rende le modifiche effettuate effettive.
+
+il git commit richiede di associare un messaggio.
+
+git commit -m "Story 182: fix benchmarks for speed" = commit con messaggio associato.
+
+git log = storico di tutte le modifiche che sono state eseguite 

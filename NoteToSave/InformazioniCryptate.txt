@@ -1,0 +1,101 @@
+{
+    "name":"Andrea",
+    "surname":"Laera",
+    "birth":"1999-06-22",
+    "password":"&Endriu99",
+    "email":"andrealaera0@gmail.com"
+}
+
+{
+    "firstName": "Andrea",
+    "lastName": "Laera",
+    "email": "andrealaera0@gmail.com",
+    "password": "Va7i6ylZTqR5gf6+uFJYGw==",
+    "panCodeInfo": {
+        "panCode": "3555700744",
+        "creationDate": "2023-02-15",
+        "expriationDate": "2028-02-15"
+    },
+    "bankAccount": [
+        {
+            "iban": "IT78A5876574398854624664060",
+            "currency": "EURO",
+            "creationDate": "2023-02-15",
+            "amount": 0.0,
+            "propetary": "Andrea Laera"
+        }
+    ],
+    "message": "OPERATION DONE CORRECTLY",
+    "statudCode": "OK"
+}
+
+
+
+
+
+
+
+{
+    "name":"Giuseppe",
+    "surname":"Pollame",
+    "birth":"1962-12-09",
+    "password":"Osvaldo&12",
+    "email":"giuseppe_magico0@gmail.com"
+}
+
+{
+    "firstName": "Giuseppe",
+    "lastName": "Pollame",
+    "email": "giuseppe_magico0@gmail.com",
+    "password": "uaOIL2Ie9YrHTvuT914fig==",
+    "panCodeInfo": {
+        "panCode": "3436418169",
+        "creationDate": "2023-02-15",
+        "expriationDate": "2028-02-15"
+    },
+    "bankAccount": [
+        {
+            "iban": "IT58A5876574398579729706574",
+            "currency": "EURO",
+            "creationDate": "2023-02-15",
+            "amount": 0.0,
+            "propetary": "Giuseppe Pollame"
+        }
+    ],
+    "message": "OPERATION DONE CORRECTLY",
+    "statudCode": "OK"
+}
+
+
+
+
+{
+    "name":"Riccardo",
+    "surname":"Reolo",
+    "birth":"2000-05-30",
+    "password":"&Reolo55",
+    "email":"reolo0@gmail.com"
+}
+
+{
+    "firstName": "Riccardo",
+    "lastName": "Reolo",
+    "email": "reolo0@gmail.com",
+    "password": "xrUhzRuF023fIxUZczIUIQ==",
+    "panCodeInfo": {
+        "panCode": "6198621625",
+        "creationDate": "2023-02-15",
+        "expriationDate": "2028-02-15"
+    },
+    "bankAccount": [
+        {
+            "iban": "IT54A5876574398888840643390",
+            "currency": "EURO",
+            "creationDate": "2023-02-15",
+            "amount": 0.0,
+            "propetary": "Riccardo Reolo"
+        }
+    ],
+    "message": "OPERATION DONE CORRECTLY",
+    "statudCode": "OK"
+}

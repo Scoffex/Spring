@@ -1,0 +1,21 @@
+tfs = piattaforma molto simile a git. 
+paradigma event riven
+application server.
+Ear
+war 
+jar
+jbos/wildfly
+websphere
+maven
+fatto la modifica e testato. si effettua una pull request dove vie e mergato il file con le modifiche con il main.ù
+git
+
+
+
+
+
+project explorer
+git repositories
+
+
+maven/git

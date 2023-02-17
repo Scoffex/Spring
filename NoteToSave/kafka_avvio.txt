@@ -1,0 +1,23 @@
+ - Startiamo zookeeper che serve per sincorinzzare kafka con il file di properties = .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+ - Startiamo il server kafka con il suo file di properties = .\bin\windows\kafka-server-start.bat .\config\server.properties
+
+ - creazione di un nuovo topic = .\bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 3 --topic EsercizioFinale
+
+ - inserimento dati in un topic = .\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic TestTopic
+
+ - lettura dati da un topic = .\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic EsercizioFinale --from-beginning
+
+ - kafka-topics.bat --bootstrap-server=localhost:9092 --list
+
+ - inserimento dati in un topic = .\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic TestTopic
+
+ - creazione di un nuovo topic = .\bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic Final
+
+ - vedere tutti i topic presenti nel sistema = .\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
+
+ - elminare un topic = .\bin\windows\kafka-topics.bat --bootstrap-server localhost:9092 --delete --topic NewTopic
+
+ - eliminare un consumer = .\bin\windows\kafka-consumer-groups.bat --bootstrap-server localhost:9092 --delete --group Andrea
+
+ - visualizzare lista di consumer = .\bin\windows\kafka-consumer-groups.bat --list --bootstrap-server localhost:9092

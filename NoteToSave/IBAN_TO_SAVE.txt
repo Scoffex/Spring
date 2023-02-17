@@ -1,0 +1,27 @@
+ID 1 = IT49L0300203280558862133199
+ID 2 = IT27J0300203280586846562253
+ID 3 = IT07D0300203280973326711279
+
+PANCODE
+ID 1 = 5555
+ID 2 = 1111
+
+
+{
+    "amount":500,
+    "currency":"euro",
+    "panCode":"5555",
+    "atmCode":"1111",
+    "iban":"IT49L0300203280558862133199",
+    "operation": "check"
+}
+
+
+{
+    "iban":"IT49L0300203280558862133199",
+
+    "operation": "balance"
+}
+
+
+https://www.conduktor.io/kafka/complete-kafka-consumer-with-java

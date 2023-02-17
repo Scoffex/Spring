@@ -1,0 +1,100 @@
+POM in maven è un file xml che contiene informazioni sul progetto e i dettagli di configurazione di maven per buildare il progetto. 
+Il pom contiene i goals e i plugins, quando maven esegue un task o un goal, maven visiona il suo pom, legge il pom prende le informazioni di configurazione che necessita e successivamente esegue il goal.
+Le configurazioni che possono essere settate nel pom sono:
+- project dependencies.
+- plugins
+- goals 
+- build profiles 
+- project verison
+- developers 
+- mailing list
+
+Esempio di POM: 
+<project xmlns = "http://maven.apache.org/POM/4.0.0"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://maven.apache.org/POM/4.0.0
+   http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>com.companyname.project-group</groupId>
+   <artifactId>project</artifactId>
+   <version>1.0</version>
+</project>
+
+
+Project root = main del progetto, va specificato il base schema setting e e il w3.org specification
+Model version = standard a 4.0.0
+grouId = Id del gruppo che lavora dietro al progetto.
+artifacId = id del progetto, ovvero il nome del progetto.
+groupId + artifacId indicano la posizione del progetto all'interno del repository.
+version = versione del progetto, è usato nel repository per separare le versioni del progetto.
+
+Ogni pom creato eredita da un pom genitore, il pom base da cui parte tutto e acui vengono implementati gli elementi predefiniti prende il nome di SuperPOM.
+
+
+Ciclo di vita di un maven:
+sono una sequenza di fasi che definiscono l'ordine in cui i goal devono essere eseguiti. ogni fase rappresenta una fase del cico di vita di un maven. un ciclo di maven build ha le seguenti fasi: 
+1) prepare resources / resource copying = personalizza le risorse da copiare.
+2) validate / validating the information = valida se il progetto è corretto e se tutte le infromazioni sono disponibili. 
+3) compile / compilation = compilazione del source code.
+4) test / testing = testa il codice compilato per i test
+5) package / packaging = questa fase crea un jar/war package come indicato nel pom.xml.
+6) install / installazione = installa il pacchetto nella repository maven locale/remota.
+7) Deploy/ Deploying = copia il pacchetto finale nella repository remota.
+
+Pre e post fasi per registrate un gol che deve essere runnato prima o dopo una particolare fase.
+
+Quando Maven inizia a buildare un progetto, tale progetto passa tramite una serie di fasi che eseguono il goal.
+
+tali fasi sono raggruppati in 3 cicli di vita:
+1) Clean.
+2) Default.
+3) Site.
+
+
+Un goal rappresenta uno specifico task che contribuisce al building e alla gestione del progetto. Può essere assocaito a 0 o più fasi di build. L'ordine di esecuzione dei goal dipende dall'ordine in cui vengono invocati gli obiettivi e le fasi di building
+
+Ad esempio il comando: mvn clean dependency:copy-dependencies package
+Chiama un ciclo di vita ti tipo clen che esegue sul goal dependency:copy-dependencies il package (fase in cui viene creato il war/jar).
+
+il ciclo di vita Clean è legato alla fase di clean che elimina la directory di build.
+la fase di clean ha a sua volta 3 fasi: pre-clean, clean, post-clean le fasi della clean vengono runnate in ordine, pertanto se no runniamo post clean verranno eseguite tutte mentre se runniamo clean verranno eseguite solo le prime e due.
+
+La seconda fase del ciclo di vita di un maven project è il default, che a sua volta è costituito da 21 fasi. https://www.tutorialspoint.com/maven/maven_build_life_cycle.htm
+
+Quando una fase viene chiamata tramite il comando Maven, ad esempio mvn compile , verranno eseguite solo le fasi fino a quella fase inclusa. 
+
+infine è presente la fase di site. 
+
+Struttura del file maven può essere modificata specificandolo nel pom ma è una best practics evitarlo
+
+
+struttura di un file maven: 
+src/main/java dove avremo i nostri file java.
+
+
+command: mvn clean package; 
+fa il clean delle build precedenti dell'applicazione e successivamente fa il package. Ricordiamo che clean fa parte del ciclo di vita clean dell'applicazione mentre package del ciclo build.
+
+Plugin in maven sono un set di goal che vengono eseguiti in ordine, tali goal possono appartenere a build phase o a clean phase. Tramite i singoli goal possiamo settare nel pom cosa effettivamente effettuare nel codice a livello di build o clean, se zippare il file come war o come jar o come ear e così via.
+
+Dependency
+la sezione dependency del pom ci permette di selezionare e inserire tutte le dipendenze che ci servono per il progetto. Esistono 6 diverse tipologia di dipendenze: 
+Compile
+Runtime
+Test
+Provided
+System
+Import
+
+Compile è lo scope di default e ci permette di compilare ed eseguire la nostra applicazione aggiungere le dipendenze al progetto, le dipendenze di tipo compile sono incluse 
+
+Runtime = la dependency è disponibile durante la fase di runtime ma non durante quella di compilazione.
+
+Test = la dependency è disponibile solo per i test
+
+Provided = ??
+
+i plugin ovvero i goal che agiscono a livello di compile vanno inseriti all'interno di un tag <build>.
+
+
+

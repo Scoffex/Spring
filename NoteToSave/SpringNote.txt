@@ -1,0 +1,48 @@
+## Component
+Quando Spring scansiona il package specificato nell'applicationContext e trova l'annotation Component, lui automaticamente registra il bean nello spring container associandolo ad un id che verrà utilizzato per richiamarlo qualora ci servisse. E' possibile anche non associare il component ad un id, in tal caso utilizzerà di default come identificativo il nome della classe con la prima lettera minuscola.
+
+
+## IoC
+Spring Container = IoC Container, fornisce un contesto configurabile per la creazione e gestione delle dipendenze
+chiamati appunto bean. Il container è composto da due interfacce:
+1) BeanFactory che definisce le funzionalità di base per la gestione dei bean, creazione dei bean, inizializzazione dei bean mediante la dipendency injection, gestire ciclo di vita dei bean.
+2) ApplicationContext = estende le funzionalità basilari del BeanFactory aggiungendone altre funzionalità.
+
+Esistono 3 modi di configurare un container:
+1) con un file xml
+2) Xml component scan che utilizza le annotation component per inserire i bean nel container e successivamente li scansiona per capire quale di esso iniettare a seconda della richiesta.
+3) Java Configuration Class (configurazione tramite codice java NO XML)
+
+
+## Bean
+Bean = In Spring un Bean è semplicemente un oggetto Java che viene creato ma è contenuto all'interno dell'IoC container di Spring.
+Spring memorizza sempre e solo una singola istanza di un bean, la conserva in memoria e offrirà sempre e solo quell'istanza. (Singleton) Ma è possibile
+specificare che tipo di memorizzazione si desidera di uno specifico bean, ciò avviene tramite l'annotation @Scope("singleton") e all'interno si specifica che tipo di memorizzazione si desidera. 
+Tipologie:
+Singlegton = crea l'oggetto una singola volta e ritorna lo stesso oggetto per ogni richiesta.
+Prototype = crea un nuovo oggetto per ogni richiesta.
+Di default utilizza lo scope singleton. 
+
+
+## Dipendency Injection
+Sprint attua la dipendency injection mediante l'autowired, ovvero Spring automaticamente cabla gli oggetti assieme cioè cerca una classe che metcha 
+una determinata proprietà, tale match avviene a seconda del tipo (classe o interfaccia), quando spring trova il match innietta automaticamente la classe o l'interfaccia. Tale processo è definito autowired. 
+ESEMPIO DI UTILIZZO: 
+Bisogna iniettare FortuneService, Spring prima scansiona tutte le classi targhetizzate con component o service successivamente verifica quali fra loro
+implementa FortuneService e successivamente trova e innietta la classe che la implementa.
+
+
+Esistono 3 tipologia di injection:
+1) Constructor injection = la inniezione avviene tramite il costruttore della classe, passandogli la dipendenza mediante parametro;
+2) Setter injection = la inniezione avviene tramite un metodo setter che ha come parametro la dipendenza;
+3) Field Injections = Classico metodo, l'autowired avviene direttamente sul campo;
+
+Nel caso in cui un interfaccia che stiamo inettando ha più di una singola implementazione, magari ci sono più classi che la estendono in quel caso
+oltre all'annotation @AUTOWIRED dobbiamo usare l'annotation @QUALIFIER("nomeDellaClasseCheVogliamoIniettare");
+
+ANNOTATION PARTICOLARI:
+@PostConstruct = si specifica con tale annotation il metodo che deve essere runnato prima che la classe diventi un servizio, è un metodo di pre inizializzazione del bean.
+@PreDestroy = metodo che viene runnato prima che il bean venga distrutto, pertanto ultimo metodo che viene runnato.
+
+
+
