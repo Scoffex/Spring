@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "20c5c4bd-7f51-4e4e-bf47-27b33e5d2a31",
+		"name": "SpringClientAnagrafic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FindByEmail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/spring/findByEmail/Andre",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"spring",
+						"findByEmail",
+						"Andre"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/spring/delete/55",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"spring",
+						"delete",
+						"55"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Andrea\",\r\n    \"surname\":\"Laera\",\r\n    \"birth\":\"1999-06-22\",\r\n    \"password\":\"&Endriu00da\",\r\n    \"email\":\"andrealaera5adaaaa55@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/spring/save",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"spring",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"LOLLO\",\r\n    \"surname\":\"POLLO\",\r\n    \"birth\":\"1999-06-22\",\r\n    \"password\":\"ASD\",\r\n    \"email\":\"andrealaerasd@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/spring/update/103",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"spring",
+						"update",
+						"103"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/spring/client/getAll",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"spring",
+						"client",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

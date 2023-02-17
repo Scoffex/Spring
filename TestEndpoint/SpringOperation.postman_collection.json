@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "88c5cf01-8c17-409b-bad8-f666e9234f43",
+		"name": "SpringOperation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "balanceOfAllAccount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/spring/operation/balanceAll/6198621625",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"spring",
+						"operation",
+						"balanceAll",
+						"6198621625"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "balanceOfOneAccount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/spring/operation/balanceSingle/IT19A5876574398588487147587",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"spring",
+						"operation",
+						"balanceSingle",
+						"IT19A5876574398588487147587"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deposit/Withdrawl",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\": 2112,\r\n    \"iban\": \"IT02A5876574398989296087167\",\r\n    \"operation\":\"deposit\",\r\n    \"status\":\"check\",\r\n    \"atmCode\":\"1234567891\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/spring/operation/transaction",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"spring",
+						"operation",
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConfirmOperation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"atmCode\": \"1234567891\",\r\n    \"operationTime\": \"2023-02-16T10:13:03.584+00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/spring/operation/transaction/confirmed",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"spring",
+						"operation",
+						"transaction",
+						"confirmed"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
