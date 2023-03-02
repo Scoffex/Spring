@@ -1,0 +1,1092 @@
+2023-03-02T08:42:03.201+01:00  INFO 2328 --- [restartedMain] com.progetto.DemoApplication             : Starting DemoApplication using Java 17.0.6 with PID 2328 (C:\Users\alaera\Desktop\SpringAll\workspace\SpringProject\target\classes started by alaera in C:\Users\alaera\Desktop\SpringAll\workspace\SpringProject)
+2023-03-02T08:42:03.229+01:00  INFO 2328 --- [restartedMain] com.progetto.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-03-02T08:42:03.278+01:00  INFO 2328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-02T08:42:03.278+01:00  INFO 2328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-02T08:42:04.677+01:00  INFO 2328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-02T08:42:04.752+01:00  INFO 2328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 5 JPA repository interfaces.
+2023-03-02T08:42:05.313+01:00  INFO 2328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-02T08:42:05.322+01:00  INFO 2328 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-02T08:42:05.322+01:00  INFO 2328 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-02T08:42:05.375+01:00  INFO 2328 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-02T08:42:05.375+01:00  INFO 2328 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2096 ms
+2023-03-02T08:42:05.404+01:00  INFO 2328 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-02T08:42:05.550+01:00  INFO 2328 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3614cab
+2023-03-02T08:42:05.553+01:00  INFO 2328 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-02T08:42:05.564+01:00  INFO 2328 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/Spring'
+2023-03-02T08:42:05.645+01:00  INFO 2328 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-02T08:42:05.687+01:00  INFO 2328 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-03-02T08:42:05.840+01:00  WARN 2328 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-02T08:42:05.972+01:00  INFO 2328 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-02T08:42:06.803+01:00  INFO 2328 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-02T08:42:06.810+01:00  INFO 2328 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-02T08:42:07.346+01:00  WARN 2328 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-02T08:42:07.427+01:00  INFO 2328 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2023-03-02T08:42:07.587+01:00  INFO 2328 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5b85a31b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@445a515, org.springframework.security.web.context.SecurityContextHolderFilter@584ae83e, org.springframework.security.web.header.HeaderWriterFilter@1edd0601, org.springframework.security.web.authentication.logout.LogoutFilter@550988a3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1808f2ec, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@12a784c3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@9ce43ac, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@76b7c68b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1578d8a0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1523a61c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@290af5a0, org.springframework.security.web.access.ExceptionTranslationFilter@134c4b69, org.springframework.security.web.access.intercept.AuthorizationFilter@18138db7]
+2023-03-02T08:42:07.595+01:00  WARN 2328 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/spring/client/save']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-03-02T08:42:07.596+01:00  INFO 2328 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/spring/client/save']
+2023-03-02T08:42:07.596+01:00  WARN 2328 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/spring/admin/save']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-03-02T08:42:07.597+01:00  INFO 2328 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/spring/admin/save']
+2023-03-02T08:42:07.597+01:00  WARN 2328 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/spring/jwt/auth']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-03-02T08:42:07.597+01:00  INFO 2328 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/spring/jwt/auth']
+2023-03-02T08:42:07.597+01:00  WARN 2328 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/error']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-03-02T08:42:07.597+01:00  INFO 2328 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/error']
+2023-03-02T08:42:07.947+01:00  INFO 2328 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-02T08:42:07.995+01:00  INFO 2328 --- [restartedMain] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-03-02T08:42:08.054+01:00  INFO 2328 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.3.2
+2023-03-02T08:42:08.055+01:00  INFO 2328 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: b66af662e61082cb
+2023-03-02T08:42:08.055+01:00  INFO 2328 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1677742928053
+2023-03-02T08:42:08.351+01:00  INFO 2328 --- [kafka-admin-client-thread | adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
+2023-03-02T08:42:08.361+01:00  INFO 2328 --- [kafka-admin-client-thread | adminclient-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2023-03-02T08:42:08.361+01:00  INFO 2328 --- [kafka-admin-client-thread | adminclient-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-03-02T08:42:08.361+01:00  INFO 2328 --- [kafka-admin-client-thread | adminclient-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2023-03-02T08:42:08.385+01:00  INFO 2328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-02T08:42:08.406+01:00  INFO 2328 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-ANDREI-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = ANDREI
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 30000
+	reconnect.backoff.ms = 30000
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-03-02T08:42:08.446+01:00  INFO 2328 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.3.2
+2023-03-02T08:42:08.446+01:00  INFO 2328 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: b66af662e61082cb
+2023-03-02T08:42:08.446+01:00  INFO 2328 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1677742928446
+2023-03-02T08:42:08.448+01:00  INFO 2328 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-ANDREI-1, groupId=ANDREI] Subscribed to topic(s): EsercizioFinale
+2023-03-02T08:42:08.481+01:00  INFO 2328 --- [restartedMain] com.progetto.DemoApplication             : Started DemoApplication in 8.17 seconds (process running for 8.906)
+2023-03-02T08:42:08.485+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-ANDREI-1, groupId=ANDREI] Resetting the last seen epoch of partition EsercizioFinale-0 to 0 since the associated topicId changed from null to xIIF50w8T0ypbfLUEFLFZA
+2023-03-02T08:42:08.491+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-ANDREI-1, groupId=ANDREI] Cluster ID: SbWxTDiVSv6tMo-leCKE6w
+2023-03-02T08:42:08.546+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-1, groupId=ANDREI] Discovered group coordinator VDI-ECVS-090.aurigaactive.aurigainformatica.it:9092 (id: 2147483647 rack: null)
+2023-03-02T08:42:08.547+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-1, groupId=ANDREI] (Re-)joining group
+2023-03-02T08:42:08.656+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-1, groupId=ANDREI] Request joining group due to: need to re-join with the given member-id: consumer-ANDREI-1-3742200e-ed7b-4edb-abff-97ec30a5c76a
+2023-03-02T08:42:08.657+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-1, groupId=ANDREI] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2023-03-02T08:42:08.657+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-1, groupId=ANDREI] (Re-)joining group
+2023-03-02T08:42:08.675+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-1, groupId=ANDREI] Successfully joined group with generation Generation{generationId=1743, memberId='consumer-ANDREI-1-3742200e-ed7b-4edb-abff-97ec30a5c76a', protocol='range'}
+2023-03-02T08:42:08.677+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-1, groupId=ANDREI] Finished assignment for group at generation 1743: {consumer-ANDREI-1-3742200e-ed7b-4edb-abff-97ec30a5c76a=Assignment(partitions=[EsercizioFinale-0])}
+2023-03-02T08:42:08.833+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-1, groupId=ANDREI] Successfully synced group in generation Generation{generationId=1743, memberId='consumer-ANDREI-1-3742200e-ed7b-4edb-abff-97ec30a5c76a', protocol='range'}
+2023-03-02T08:42:08.834+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-1, groupId=ANDREI] Notifying assignor about the new Assignment(partitions=[EsercizioFinale-0])
+2023-03-02T08:42:08.858+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-1, groupId=ANDREI] Adding newly assigned partitions: EsercizioFinale-0
+2023-03-02T08:42:08.951+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-1, groupId=ANDREI] Setting offset for partition EsercizioFinale-0 to the committed offset FetchPosition{offset=47, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[VDI-ECVS-090.aurigaactive.aurigainformatica.it:9092 (id: 0 rack: null)], epoch=0}}
+2023-03-02T08:42:08.970+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : ANDREI: partitions assigned: [EsercizioFinale-0]
+2023-03-02T08:42:38.036+01:00  INFO 2328 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-02T08:42:38.036+01:00  INFO 2328 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-02T08:42:38.038+01:00  INFO 2328 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-02T08:42:38.055+01:00  INFO 2328 --- [http-nio-8080-exec-2] com.progetto.security.FilterJWT          : FILTER JWT ACTIVE...
+2023-03-02T08:42:38.265+01:00  WARN 2328 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.progetto.dto.ResponseFromApi com.progetto.controller.ClientBankController.save(com.progetto.dto.ClientBankDto,jakarta.servlet.http.HttpServletRequest) throws com.progetto.exception.GenericError: [Field error in object 'clientBankDto' on field 'email': rejected value [andrealaera0111@gmail.com]; codes [EmailCustomConstraint.clientBankDto.email,EmailCustomConstraint.email,EmailCustomConstraint.java.lang.String,EmailCustomConstraint]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clientBankDto.email,email]; arguments []; default message [email]]; default message [EMAIL ALREADY PRESENT IN THE SYSTEM: ]] ]
+2023-03-02T08:42:45.073+01:00  INFO 2328 --- [http-nio-8080-exec-4] com.progetto.security.FilterJWT          : FILTER JWT ACTIVE...
+2023-03-02T08:42:45.293+01:00  INFO 2328 --- [http-nio-8080-exec-4] c.p.l.RegistrationCompleteEventListner   : Click the link to verify yout account: http://localhost:8080/spring/verification/verifyRegistration/22667e3b-a238-45be-8dd4-984a7a42f620
+2023-03-02T08:42:45.295+01:00  INFO 2328 --- [http-nio-8080-exec-4] c.p.s.ClientBankAccountServiceImpl       : BankAccount [id=U730W3G0SwKks7WehniSqg1677742965294, iban=jGprXzdW4KXmp2s9xR30bNgfDzi5OYm1zTWdx0Vjx9Q=, amount=0.0, currency=EURO, dateCreationAccount=2023-03-02, clientBank=ClientBank [id=VKyBk1GFSB696Vzr6gd-kg1677742965247, firstName=Andrea, lastName=Laera, email=andrealaera01111@gmail.com, password=$2a$11$8B/ghmOaQ8sH4AdkTDx5p.aodmYnFltu3pRAjM5pfOXK3H9KFnT32, borningDate=1999-06-22, panCode=pktwIsmAGln/b52CGbl5kw==, status=IS VERIFICATING, creationDate=2023-03-02, expirationDate=2028-03-02 ]]
+2023-03-02T08:42:45.364+01:00  INFO 2328 --- [http-nio-8080-exec-4] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2023-03-02T08:42:45.373+01:00  INFO 2328 --- [http-nio-8080-exec-4] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2023-03-02T08:42:45.384+01:00  INFO 2328 --- [http-nio-8080-exec-4] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.3.2
+2023-03-02T08:42:45.384+01:00  INFO 2328 --- [http-nio-8080-exec-4] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: b66af662e61082cb
+2023-03-02T08:42:45.385+01:00  INFO 2328 --- [http-nio-8080-exec-4] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1677742965384
+2023-03-02T08:42:45.392+01:00  INFO 2328 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition EsercizioFinale-0 to 0 since the associated topicId changed from null to xIIF50w8T0ypbfLUEFLFZA
+2023-03-02T08:42:45.393+01:00  INFO 2328 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: SbWxTDiVSv6tMo-leCKE6w
+2023-03-02T08:42:45.501+01:00  INFO 2328 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 4000 with epoch 0
+2023-03-02T08:42:45.619+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.progetto.kafka.KafkaRender           : TOPIC: EsercizioFinale
+ MESSAGE: {"listOfuser":null,"singleClient":{"id":"VKyBk1GFSB696Vzr6gd-kg1677742965247","firstName":"Andrea","lastName":"Laera","email":"andrealaera01111@gmail.com","password":"$2a$11$8B/ghmOaQ8sH4AdkTDx5p.aodmYnFltu3pRAjM5pfOXK3H9KFnT32","borningDate":[1999,6,22],"panCode":"pktwIsmAGln/b52CGbl5kw==","status":"IS VERIFICATING","creationDate":[2023,3,2],"expirationDate":[2028,3,2]},"bankAccount":[{"iban":"jGprXzdW4KXmp2s9xR30bNgfDzi5OYm1zTWdx0Vjx9Q=","currency":"EURO","creationDate":[2023,3,2],"amount":0.0,"propetary":"Andrea Laera"}],"bankAccountSingle":null,"listOfTransaction":null,"singleTransaction":null,"operationDto":null,"message":"OPERATION DONE CORRECTLY","statudCode":"OK"}
+ TIME MESSAGE SENDING: Thu Mar 02 08:42:45 CET 2023
+ KEY: ID_1
+2023-03-02T08:42:49.461+01:00  WARN 2328 --- [http-nio-8080-exec-8] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [112] milliseconds.
+2023-03-02T08:43:04.607+01:00  INFO 2328 --- [http-nio-8080-exec-3] com.progetto.security.FilterJWT          : FILTER JWT ACTIVE...
+2023-03-02T08:43:04.802+01:00  INFO 2328 --- [http-nio-8080-exec-3] c.p.security.UserCredentialService       : THE CLIENT LOGGING: ClientBank [id=qicmfGyjS6KB9s9yBVCyNw1677662372902, firstName=Andrea, lastName=Laera, email=andrealaera01@gmail.com, password=$2a$11$NPgZYkKYgIu8Z1K9zzE7x.Kr8VZSwMKfcIqQjFB.bp..k5p2x9pEm, borningDate=1999-06-22, panCode=JMCAN0TbWg1+vh+DnCxF1g==, status=IS VERIFICATING, creationDate=2023-03-01, expirationDate=2028-03-01 ]
+2023-03-02T08:43:53.417+01:00  INFO 2328 --- [http-nio-8080-exec-7] com.progetto.security.FilterJWT          : FILTER JWT ACTIVE...
+2023-03-02T08:43:53.445+01:00  INFO 2328 --- [http-nio-8080-exec-7] c.p.security.UserCredentialService       : THE ADMIN LOGGING: AdminBank [id=##ADMIN-AUlogFgPRq-qSSrV79iJHA1677667903989, firstName=Giorgio, lastName=Mastrota, password=$2a$11$RKPxtQBVay9Y3j4XmY/j4uBYjeWsKO4T2HZRKIESgEl15FWGNxvSG, creationDate=2023-03-01 11:51:43.989]
+2023-03-02T08:45:10.134+01:00  INFO 2328 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-03-02T08:45:10.139+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-1, groupId=ANDREI] Revoke previously assigned partitions EsercizioFinale-0
+2023-03-02T08:45:10.139+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : ANDREI: partitions revoked: [EsercizioFinale-0]
+2023-03-02T08:45:10.140+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-1, groupId=ANDREI] Member consumer-ANDREI-1-3742200e-ed7b-4edb-abff-97ec30a5c76a sending LeaveGroup request to coordinator VDI-ECVS-090.aurigaactive.aurigainformatica.it:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2023-03-02T08:45:10.140+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-1, groupId=ANDREI] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-03-02T08:45:10.140+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-1, groupId=ANDREI] Request joining group due to: consumer pro-actively leaving the group
+2023-03-02T08:45:10.141+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-ANDREI-1, groupId=ANDREI] Unsubscribed all topics or patterns and assigned partitions
+2023-03-02T08:45:10.141+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-1, groupId=ANDREI] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-03-02T08:45:10.141+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-1, groupId=ANDREI] Request joining group due to: consumer pro-actively leaving the group
+2023-03-02T08:45:10.151+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2023-03-02T08:45:10.151+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-03-02T08:45:10.151+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2023-03-02T08:45:10.152+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-ANDREI-1 unregistered
+2023-03-02T08:45:10.158+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : ANDREI: Consumer stopped
+2023-03-02T08:45:10.170+01:00  INFO 2328 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-02T08:45:10.171+01:00  INFO 2328 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-02T08:45:10.184+01:00  WARN 2328 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Thread-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.6/java.lang.Thread.sleep(Native Method)
+ com.progetto.thread.ThreadVerification.run(ThreadVerification.java:27)
+2023-03-02T08:45:10.185+01:00  WARN 2328 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [kafka-producer-network-thread | producer-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.6/sun.nio.ch.WEPoll.wait(Native Method)
+ java.base@17.0.6/sun.nio.ch.WEPollSelectorImpl.doSelect(WEPollSelectorImpl.java:111)
+ java.base@17.0.6/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+ java.base@17.0.6/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:141)
+ app//org.apache.kafka.common.network.Selector.select(Selector.java:873)
+ app//org.apache.kafka.common.network.Selector.poll(Selector.java:465)
+ app//org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:560)
+ app//org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:328)
+ app//org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+ java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+2023-03-02T08:45:10.191+01:00  INFO 2328 --- [Thread-5] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2023-03-02T08:45:10.193+01:00  INFO 2328 --- [Thread-5] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2023-03-02T08:45:10.193+01:00  INFO 2328 --- [Thread-5] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-03-02T08:45:10.194+01:00  INFO 2328 --- [Thread-5] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2023-03-02T08:45:10.194+01:00  INFO 2328 --- [Thread-5] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+2023-03-02T08:45:10.195+01:00  INFO 2328 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-02T08:45:10.202+01:00  INFO 2328 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-02T08:45:10.224+01:00  INFO 2328 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-02T08:45:10.396+01:00  INFO 2328 --- [restartedMain] com.progetto.DemoApplication             : Starting DemoApplication using Java 17.0.6 with PID 2328 (C:\Users\alaera\Desktop\SpringAll\workspace\SpringProject\target\classes started by alaera in C:\Users\alaera\Desktop\SpringAll\workspace\SpringProject)
+2023-03-02T08:45:10.396+01:00  INFO 2328 --- [restartedMain] com.progetto.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-03-02T08:45:10.582+01:00  INFO 2328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-02T08:45:10.603+01:00  INFO 2328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 5 JPA repository interfaces.
+2023-03-02T08:45:10.717+01:00  INFO 2328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-02T08:45:10.718+01:00  INFO 2328 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-02T08:45:10.718+01:00  INFO 2328 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-02T08:45:10.738+01:00  INFO 2328 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-02T08:45:10.738+01:00  INFO 2328 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 339 ms
+2023-03-02T08:45:10.750+01:00  INFO 2328 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-03-02T08:45:10.795+01:00  INFO 2328 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@a4b3a32
+2023-03-02T08:45:10.795+01:00  INFO 2328 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-03-02T08:45:10.796+01:00  INFO 2328 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/Spring'
+2023-03-02T08:45:10.831+01:00  INFO 2328 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-02T08:45:10.834+01:00  WARN 2328 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-02T08:45:10.849+01:00  INFO 2328 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-02T08:45:11.031+01:00  INFO 2328 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-02T08:45:11.031+01:00  INFO 2328 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-02T08:45:11.157+01:00  WARN 2328 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'adminService': Error creating bean with name 'adminBankServiceImpl': Unsatisfied dependency expressed through field 'encode': Error creating bean with name 'securityConfig' defined in file [C:\Users\alaera\Desktop\SpringAll\workspace\SpringProject\target\classes\com\progetto\security\SecurityConfig.class]: Failed to instantiate [com.progetto.security.SecurityConfig$$SpringCGLIB$$0]: Constructor threw exception
+2023-03-02T08:45:11.157+01:00  INFO 2328 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-02T08:45:11.158+01:00  INFO 2328 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-03-02T08:45:11.175+01:00  INFO 2328 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-03-02T08:45:11.176+01:00  INFO 2328 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-02T08:45:11.189+01:00  INFO 2328 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-03-02T08:45:11.219+01:00 ERROR 2328 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'adminService': Error creating bean with name 'adminBankServiceImpl': Unsatisfied dependency expressed through field 'encode': Error creating bean with name 'securityConfig' defined in file [C:\Users\alaera\Desktop\SpringAll\workspace\SpringProject\target\classes\com\progetto\security\SecurityConfig.class]: Failed to instantiate [com.progetto.security.SecurityConfig$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:712) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:692) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:133) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:481) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1397) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915) ~[spring-context-6.0.4.jar:6.0.4]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.4.jar:6.0.4]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291) ~[spring-boot-3.0.2.jar:3.0.2]
+	at com.progetto.DemoApplication.main(DemoApplication.java:17) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.2.jar:3.0.2]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminBankServiceImpl': Unsatisfied dependency expressed through field 'encode': Error creating bean with name 'securityConfig' defined in file [C:\Users\alaera\Desktop\SpringAll\workspace\SpringProject\target\classes\com\progetto\security\SecurityConfig.class]: Failed to instantiate [com.progetto.security.SecurityConfig$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:712) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:692) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:133) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:481) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1397) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:709) ~[spring-beans-6.0.4.jar:6.0.4]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig' defined in file [C:\Users\alaera\Desktop\SpringAll\workspace\SpringProject\target\classes\com\progetto\security\SecurityConfig.class]: Failed to instantiate [com.progetto.security.SecurityConfig$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1306) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1198) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:415) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:709) ~[spring-beans-6.0.4.jar:6.0.4]
+	... 39 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.progetto.security.SecurityConfig$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1300) ~[spring-beans-6.0.4.jar:6.0.4]
+	... 59 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Syntax error on token ";", { expected after this token
+	Syntax error on token(s), misplaced construct(s)
+	Syntax error on tokens, delete these tokens
+	Return type for the method is missing
+	Duplicate method authProvider() in type SecurityConfig
+	Syntax error on tokens, delete these tokens
+	Syntax error, insert "... VariableDeclaratorId" to complete FormalParameterList
+	Syntax error on token "}", delete this token
+	Duplicate method authProvider() in type SecurityConfig
+
+	at com.progetto.security.SecurityConfig.<init>(SecurityConfig.java:23) ~[classes/:na]
+	at com.progetto.security.SecurityConfig$$SpringCGLIB$$0.<init>(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:197) ~[spring-beans-6.0.4.jar:6.0.4]
+	... 61 common frames omitted
+
+2023-03-02T08:45:22.789+01:00  INFO 2328 --- [restartedMain] com.progetto.DemoApplication             : Starting DemoApplication using Java 17.0.6 with PID 2328 (C:\Users\alaera\Desktop\SpringAll\workspace\SpringProject\target\classes started by alaera in C:\Users\alaera\Desktop\SpringAll\workspace\SpringProject)
+2023-03-02T08:45:22.789+01:00  INFO 2328 --- [restartedMain] com.progetto.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-03-02T08:45:22.964+01:00  INFO 2328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-02T08:45:22.984+01:00  INFO 2328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 5 JPA repository interfaces.
+2023-03-02T08:45:23.076+01:00  INFO 2328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-02T08:45:23.079+01:00  INFO 2328 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-02T08:45:23.083+01:00  INFO 2328 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-02T08:45:23.098+01:00  INFO 2328 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-03-02T08:45:23.098+01:00  INFO 2328 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 307 ms
+2023-03-02T08:45:23.110+01:00  INFO 2328 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-03-02T08:45:23.153+01:00  INFO 2328 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@2dcab20b
+2023-03-02T08:45:23.153+01:00  INFO 2328 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-03-02T08:45:23.153+01:00  INFO 2328 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/Spring'
+2023-03-02T08:45:23.239+01:00  INFO 2328 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-02T08:45:23.248+01:00  WARN 2328 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-02T08:45:23.274+01:00  INFO 2328 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-02T08:45:23.772+01:00  INFO 2328 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-02T08:45:23.772+01:00  INFO 2328 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-02T08:45:24.220+01:00  WARN 2328 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-02T08:45:24.242+01:00  WARN 2328 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0: Error creating bean with name 'filterChain' defined in class path resource [com/progetto/security/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'filterChain' threw exception with message: Unresolved compilation problems: 
+	SessionCreationPolicy cannot be resolved to a variable
+	UsernamePasswordAuthenticationFilter cannot be resolved to a type
+
+2023-03-02T08:45:24.245+01:00  INFO 2328 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-02T08:45:24.246+01:00  INFO 2328 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-03-02T08:45:24.258+01:00  INFO 2328 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-03-02T08:45:24.259+01:00  INFO 2328 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-02T08:45:24.291+01:00  INFO 2328 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-03-02T08:45:24.293+01:00 ERROR 2328 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0: Error creating bean with name 'filterChain' defined in class path resource [com/progetto/security/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'filterChain' threw exception with message: Unresolved compilation problems: 
+	SessionCreationPolicy cannot be resolved to a variable
+	UsernamePasswordAuthenticationFilter cannot be resolved to a type
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:817) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:769) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:133) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:481) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1397) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915) ~[spring-context-6.0.4.jar:6.0.4]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.4.jar:6.0.4]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291) ~[spring-boot-3.0.2.jar:3.0.2]
+	at com.progetto.DemoApplication.main(DemoApplication.java:17) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.2.jar:3.0.2]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'filterChain' defined in class path resource [com/progetto/security/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'filterChain' threw exception with message: Unresolved compilation problems: 
+	SessionCreationPolicy cannot be resolved to a variable
+	UsernamePasswordAuthenticationFilter cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1621) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1585) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1476) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1363) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:809) ~[spring-beans-6.0.4.jar:6.0.4]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'filterChain' threw exception with message: Unresolved compilation problems: 
+	SessionCreationPolicy cannot be resolved to a variable
+	UsernamePasswordAuthenticationFilter cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.0.4.jar:6.0.4]
+	... 41 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	SessionCreationPolicy cannot be resolved to a variable
+	UsernamePasswordAuthenticationFilter cannot be resolved to a type
+
+	at com.progetto.security.SecurityConfig.filterChain(SecurityConfig.java:36) ~[classes/:na]
+	at com.progetto.security.SecurityConfig$$SpringCGLIB$$0.CGLIB$filterChain$3(<generated>) ~[classes/:na]
+	at com.progetto.security.SecurityConfig$$SpringCGLIB$$2.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.0.4.jar:6.0.4]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-6.0.4.jar:6.0.4]
+	at com.progetto.security.SecurityConfig$$SpringCGLIB$$0.filterChain(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.4.jar:6.0.4]
+	... 42 common frames omitted
+
+2023-03-02T08:45:32.997+01:00  INFO 2328 --- [restartedMain] com.progetto.DemoApplication             : Starting DemoApplication using Java 17.0.6 with PID 2328 (C:\Users\alaera\Desktop\SpringAll\workspace\SpringProject\target\classes started by alaera in C:\Users\alaera\Desktop\SpringAll\workspace\SpringProject)
+2023-03-02T08:45:32.997+01:00  INFO 2328 --- [restartedMain] com.progetto.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-03-02T08:45:33.134+01:00  INFO 2328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-02T08:45:33.154+01:00  INFO 2328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 5 JPA repository interfaces.
+2023-03-02T08:45:33.232+01:00  INFO 2328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-02T08:45:33.233+01:00  INFO 2328 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-02T08:45:33.233+01:00  INFO 2328 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-02T08:45:33.247+01:00  INFO 2328 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-03-02T08:45:33.247+01:00  INFO 2328 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 248 ms
+2023-03-02T08:45:33.256+01:00  INFO 2328 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2023-03-02T08:45:33.297+01:00  INFO 2328 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@1ca7a2cb
+2023-03-02T08:45:33.297+01:00  INFO 2328 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2023-03-02T08:45:33.297+01:00  INFO 2328 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/Spring'
+2023-03-02T08:45:33.318+01:00  INFO 2328 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-02T08:45:33.323+01:00  WARN 2328 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-02T08:45:33.334+01:00  INFO 2328 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-02T08:45:33.443+01:00  INFO 2328 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-02T08:45:33.443+01:00  INFO 2328 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-02T08:45:33.726+01:00  WARN 2328 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-02T08:45:33.743+01:00  INFO 2328 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2023-03-02T08:45:33.826+01:00  INFO 2328 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6674ae86, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58a10b88, org.springframework.security.web.context.SecurityContextHolderFilter@48ae17bc, org.springframework.security.web.header.HeaderWriterFilter@76ee5b44, org.springframework.security.web.authentication.logout.LogoutFilter@647b4212, com.progetto.security.FilterJWT@5b7da27a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c1e4196, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@9cd8d97, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f7ec51b, org.springframework.security.web.session.SessionManagementFilter@77045994, org.springframework.security.web.access.ExceptionTranslationFilter@52fdad0d, org.springframework.security.web.access.intercept.AuthorizationFilter@3f132202]
+2023-03-02T08:45:33.832+01:00  WARN 2328 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/spring/client/save']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-03-02T08:45:33.833+01:00  INFO 2328 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/spring/client/save']
+2023-03-02T08:45:33.833+01:00  WARN 2328 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/spring/admin/save']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-03-02T08:45:33.833+01:00  INFO 2328 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/spring/admin/save']
+2023-03-02T08:45:33.833+01:00  WARN 2328 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/spring/jwt/auth']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-03-02T08:45:33.833+01:00  INFO 2328 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/spring/jwt/auth']
+2023-03-02T08:45:33.833+01:00  WARN 2328 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/error']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-03-02T08:45:33.833+01:00  INFO 2328 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/error']
+2023-03-02T08:45:33.914+01:00  INFO 2328 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-02T08:45:33.936+01:00  INFO 2328 --- [restartedMain] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-03-02T08:45:33.938+01:00  INFO 2328 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.3.2
+2023-03-02T08:45:33.938+01:00  INFO 2328 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: b66af662e61082cb
+2023-03-02T08:45:33.938+01:00  INFO 2328 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1677743133938
+2023-03-02T08:45:33.967+01:00  INFO 2328 --- [kafka-admin-client-thread | adminclient-2] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-2 unregistered
+2023-03-02T08:45:33.968+01:00  INFO 2328 --- [kafka-admin-client-thread | adminclient-2] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2023-03-02T08:45:33.968+01:00  INFO 2328 --- [kafka-admin-client-thread | adminclient-2] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-03-02T08:45:33.969+01:00  INFO 2328 --- [kafka-admin-client-thread | adminclient-2] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2023-03-02T08:45:33.974+01:00  INFO 2328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-02T08:45:33.977+01:00  INFO 2328 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-ANDREI-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = ANDREI
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 30000
+	reconnect.backoff.ms = 30000
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-03-02T08:45:33.990+01:00  INFO 2328 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.3.2
+2023-03-02T08:45:33.990+01:00  INFO 2328 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: b66af662e61082cb
+2023-03-02T08:45:33.990+01:00  INFO 2328 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1677743133990
+2023-03-02T08:45:33.990+01:00  INFO 2328 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-ANDREI-2, groupId=ANDREI] Subscribed to topic(s): EsercizioFinale
+2023-03-02T08:45:34.012+01:00  INFO 2328 --- [restartedMain] com.progetto.DemoApplication             : Started DemoApplication in 1.035 seconds (process running for 214.43)
+2023-03-02T08:45:34.015+01:00  INFO 2328 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-03-02T08:45:34.029+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-ANDREI-2, groupId=ANDREI] Resetting the last seen epoch of partition EsercizioFinale-0 to 0 since the associated topicId changed from null to xIIF50w8T0ypbfLUEFLFZA
+2023-03-02T08:45:34.029+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-ANDREI-2, groupId=ANDREI] Cluster ID: SbWxTDiVSv6tMo-leCKE6w
+2023-03-02T08:45:34.030+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-2, groupId=ANDREI] Discovered group coordinator VDI-ECVS-090.aurigaactive.aurigainformatica.it:9092 (id: 2147483647 rack: null)
+2023-03-02T08:45:34.031+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-2, groupId=ANDREI] (Re-)joining group
+2023-03-02T08:45:34.036+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-2, groupId=ANDREI] Request joining group due to: need to re-join with the given member-id: consumer-ANDREI-2-7588be03-f89c-4e88-8d58-d5b7fcee5d4c
+2023-03-02T08:45:34.036+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-2, groupId=ANDREI] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2023-03-02T08:45:34.036+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-2, groupId=ANDREI] (Re-)joining group
+2023-03-02T08:45:34.037+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-2, groupId=ANDREI] Successfully joined group with generation Generation{generationId=1745, memberId='consumer-ANDREI-2-7588be03-f89c-4e88-8d58-d5b7fcee5d4c', protocol='range'}
+2023-03-02T08:45:34.037+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-2, groupId=ANDREI] Finished assignment for group at generation 1745: {consumer-ANDREI-2-7588be03-f89c-4e88-8d58-d5b7fcee5d4c=Assignment(partitions=[EsercizioFinale-0])}
+2023-03-02T08:45:34.050+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-2, groupId=ANDREI] Successfully synced group in generation Generation{generationId=1745, memberId='consumer-ANDREI-2-7588be03-f89c-4e88-8d58-d5b7fcee5d4c', protocol='range'}
+2023-03-02T08:45:34.051+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-2, groupId=ANDREI] Notifying assignor about the new Assignment(partitions=[EsercizioFinale-0])
+2023-03-02T08:45:34.051+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-2, groupId=ANDREI] Adding newly assigned partitions: EsercizioFinale-0
+2023-03-02T08:45:34.053+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ANDREI-2, groupId=ANDREI] Setting offset for partition EsercizioFinale-0 to the committed offset FetchPosition{offset=48, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[VDI-ECVS-090.aurigaactive.aurigainformatica.it:9092 (id: 0 rack: null)], epoch=0}}
+2023-03-02T08:45:34.054+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : ANDREI: partitions assigned: [EsercizioFinale-0]
+2023-03-02T08:46:52.256+01:00  INFO 2328 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-02T08:46:52.256+01:00  INFO 2328 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-02T08:46:52.257+01:00  INFO 2328 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-02T08:46:52.258+01:00  INFO 2328 --- [http-nio-8080-exec-1] com.progetto.security.FilterJWT          : FILTER JWT ACTIVE...
+2023-03-02T08:46:52.289+01:00  INFO 2328 --- [http-nio-8080-exec-1] c.p.security.UserCredentialService       : THE ADMIN LOGGING: AdminBank [id=##ADMIN-AUlogFgPRq-qSSrV79iJHA1677667903989, firstName=Giorgio, lastName=Mastrota, password=$2a$11$RKPxtQBVay9Y3j4XmY/j4uBYjeWsKO4T2HZRKIESgEl15FWGNxvSG, creationDate=2023-03-01 11:51:43.989]
+2023-03-02T08:46:52.321+01:00  INFO 2328 --- [http-nio-8080-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-2
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2023-03-02T08:46:52.321+01:00  INFO 2328 --- [http-nio-8080-exec-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-2] Instantiated an idempotent producer.
+2023-03-02T08:46:52.323+01:00  INFO 2328 --- [http-nio-8080-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.3.2
+2023-03-02T08:46:52.323+01:00  INFO 2328 --- [http-nio-8080-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: b66af662e61082cb
+2023-03-02T08:46:52.323+01:00  INFO 2328 --- [http-nio-8080-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1677743212322
+2023-03-02T08:46:52.342+01:00  INFO 2328 --- [kafka-producer-network-thread | producer-2] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-2] Resetting the last seen epoch of partition EsercizioFinale-0 to 0 since the associated topicId changed from null to xIIF50w8T0ypbfLUEFLFZA
+2023-03-02T08:46:52.342+01:00  INFO 2328 --- [kafka-producer-network-thread | producer-2] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-2] Cluster ID: SbWxTDiVSv6tMo-leCKE6w
+2023-03-02T08:46:52.345+01:00  INFO 2328 --- [kafka-producer-network-thread | producer-2] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-2] ProducerId set to 4001 with epoch 0
+2023-03-02T08:46:52.353+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.progetto.kafka.KafkaRender           : TOPIC: EsercizioFinale
+ MESSAGE: {"listOfuser":null,"singleClient":null,"bankAccount":[{"iban":"pLaK/8GRQ5ibIdhto3Hoscwh5Vgkgk2/antDvORf4bc=","currency":"EURO","creationDate":[2023,3,1],"amount":0.0,"propetary":"Andrea Laera"},{"iban":"laE0ozGSo/y9cvg1y8pMwkPk37CAjpOWi53EWK6Ihw0=","currency":"EURO","creationDate":[2023,3,1],"amount":0.0,"propetary":"Andrea Laera"},{"iban":"kxuTdsUi/3j0B5x3B0U0CnWXSbusueNFp6cimfeZa1A=","currency":"EURO","creationDate":[2023,3,1],"amount":0.0,"propetary":"Andrea Laera"},{"iban":"a2WBHB8u0lqzKaO4NagvpUcx3xUPYkwF20WP4zGtpFM=","currency":"EURO","creationDate":[2023,3,1],"amount":0.0,"propetary":"Andrea Laera"},{"iban":"jGprXzdW4KXmp2s9xR30bNgfDzi5OYm1zTWdx0Vjx9Q=","currency":"EURO","creationDate":[2023,3,2],"amount":0.0,"propetary":"Andrea Laera"}],"bankAccountSingle":null,"listOfTransaction":null,"singleTransaction":null,"operationDto":null,"message":"PRINT ALL USERS PRESENT IN THE SYSTEM","statudCode":"OK"}
+ TIME MESSAGE SENDING: Thu Mar 02 08:46:52 CET 2023
+ KEY: ID_1
+2023-03-02T08:47:02.974+01:00  INFO 2328 --- [http-nio-8080-exec-4] com.progetto.security.FilterJWT          : FILTER JWT ACTIVE...
+2023-03-02T08:47:02.977+01:00  INFO 2328 --- [http-nio-8080-exec-4] c.p.security.UserCredentialService       : THE ADMIN LOGGING: AdminBank [id=##ADMIN-AUlogFgPRq-qSSrV79iJHA1677667903989, firstName=Giorgio, lastName=Mastrota, password=$2a$11$RKPxtQBVay9Y3j4XmY/j4uBYjeWsKO4T2HZRKIESgEl15FWGNxvSG, creationDate=2023-03-01 11:51:43.989]
+2023-03-02T08:47:03.142+01:00  INFO 2328 --- [http-nio-8080-exec-4] c.p.security.UserCredentialService       : THE CLIENT LOGGING: ClientBank [id=qicmfGyjS6KB9s9yBVCyNw1677662372902, firstName=Andrea, lastName=Laera, email=andrealaera01@gmail.com, password=$2a$11$NPgZYkKYgIu8Z1K9zzE7x.Kr8VZSwMKfcIqQjFB.bp..k5p2x9pEm, borningDate=1999-06-22, panCode=JMCAN0TbWg1+vh+DnCxF1g==, status=IS VERIFICATING, creationDate=2023-03-01, expirationDate=2028-03-01 ]
+2023-03-02T08:47:14.230+01:00  INFO 2328 --- [http-nio-8080-exec-3] com.progetto.security.FilterJWT          : FILTER JWT ACTIVE...
+2023-03-02T08:47:14.249+01:00  INFO 2328 --- [http-nio-8080-exec-3] c.p.security.UserCredentialService       : THE CLIENT LOGGING: ClientBank [id=qicmfGyjS6KB9s9yBVCyNw1677662372902, firstName=Andrea, lastName=Laera, email=andrealaera01@gmail.com, password=$2a$11$NPgZYkKYgIu8Z1K9zzE7x.Kr8VZSwMKfcIqQjFB.bp..k5p2x9pEm, borningDate=1999-06-22, panCode=JMCAN0TbWg1+vh+DnCxF1g==, status=IS VERIFICATING, creationDate=2023-03-01, expirationDate=2028-03-01 ]
+2023-03-02T08:47:14.282+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.progetto.kafka.KafkaRender           : TOPIC: EsercizioFinale
+ MESSAGE: {"listOfuser":null,"singleClient":null,"bankAccount":[{"iban":"pLaK/8GRQ5ibIdhto3Hoscwh5Vgkgk2/antDvORf4bc=","currency":"EURO","creationDate":[2023,3,1],"amount":0.0,"propetary":"Andrea Laera"},{"iban":"laE0ozGSo/y9cvg1y8pMwkPk37CAjpOWi53EWK6Ihw0=","currency":"EURO","creationDate":[2023,3,1],"amount":0.0,"propetary":"Andrea Laera"},{"iban":"kxuTdsUi/3j0B5x3B0U0CnWXSbusueNFp6cimfeZa1A=","currency":"EURO","creationDate":[2023,3,1],"amount":0.0,"propetary":"Andrea Laera"},{"iban":"a2WBHB8u0lqzKaO4NagvpUcx3xUPYkwF20WP4zGtpFM=","currency":"EURO","creationDate":[2023,3,1],"amount":0.0,"propetary":"Andrea Laera"},{"iban":"jGprXzdW4KXmp2s9xR30bNgfDzi5OYm1zTWdx0Vjx9Q=","currency":"EURO","creationDate":[2023,3,2],"amount":0.0,"propetary":"Andrea Laera"}],"bankAccountSingle":null,"listOfTransaction":null,"singleTransaction":null,"operationDto":null,"message":"PRINT ALL USERS PRESENT IN THE SYSTEM","statudCode":"OK"}
+ TIME MESSAGE SENDING: Thu Mar 02 08:47:14 CET 2023
+ KEY: ID_1
+2023-03-02T08:47:19.389+01:00  INFO 2328 --- [http-nio-8080-exec-5] com.progetto.security.FilterJWT          : FILTER JWT ACTIVE...
+2023-03-02T08:47:19.393+01:00  INFO 2328 --- [http-nio-8080-exec-5] c.p.security.UserCredentialService       : THE CLIENT LOGGING: ClientBank [id=qicmfGyjS6KB9s9yBVCyNw1677662372902, firstName=Andrea, lastName=Laera, email=andrealaera01@gmail.com, password=$2a$11$NPgZYkKYgIu8Z1K9zzE7x.Kr8VZSwMKfcIqQjFB.bp..k5p2x9pEm, borningDate=1999-06-22, panCode=JMCAN0TbWg1+vh+DnCxF1g==, status=IS VERIFICATING, creationDate=2023-03-01, expirationDate=2028-03-01 ]
+2023-03-02T08:47:19.400+01:00  INFO 2328 --- [http-nio-8080-exec-5] c.p.security.UserCredentialService       : THE CLIENT LOGGING: ClientBank [id=qicmfGyjS6KB9s9yBVCyNw1677662372902, firstName=Andrea, lastName=Laera, email=andrealaera01@gmail.com, password=$2a$11$NPgZYkKYgIu8Z1K9zzE7x.Kr8VZSwMKfcIqQjFB.bp..k5p2x9pEm, borningDate=1999-06-22, panCode=JMCAN0TbWg1+vh+DnCxF1g==, status=IS VERIFICATING, creationDate=2023-03-01, expirationDate=2028-03-01 ]
+2023-03-02T08:47:45.308+01:00  INFO 2328 --- [Thread-7] com.progetto.thread.ThreadVerification   : THREAD START...
+2023-03-02T08:47:45.308+01:00  INFO 2328 --- [Thread-7] com.progetto.thread.ThreadVerification   : IL PAN CODE: pktwIsmAGln/b52CGbl5kw== 
+2023-03-02T08:47:45.315+01:00 ERROR 2328 --- [Thread-7] com.progetto.thread.ThreadVerification   : ERROR IN RUN THREAD. ERROR: 
+
+org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties': Could not bind properties to 'DataSourceProperties' : prefix=spring.datasource, ignoreInvalidFields=false, ignoreUnknownFields=true
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.bind(ConfigurationPropertiesBindingPostProcessor.java:99) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.postProcessBeforeInitialization(ConfigurationPropertiesBindingPostProcessor.java:79) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:420) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1743) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolvePreparedArguments(ConstructorResolver.java:832) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:454) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolvePreparedArguments(ConstructorResolver.java:832) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:454) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$1.orderedStream(DefaultListableBeanFactory.java:470) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.detectPersistenceExceptionTranslators(PersistenceExceptionTranslationInterceptor.java:167) ~[spring-tx-6.0.4.jar:6.0.4]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:149) ~[spring-tx-6.0.4.jar:6.0.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.4.jar:6.0.4]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:134) ~[spring-data-jpa-3.0.1.jar:3.0.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.4.jar:6.0.4]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.0.4.jar:6.0.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.4.jar:6.0.4]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:218) ~[spring-aop-6.0.4.jar:6.0.4]
+	at jdk.proxy4/jdk.proxy4.$Proxy130.findByStatusAndPanCode(Unknown Source) ~[na:na]
+	at com.progetto.thread.ThreadVerification.run(ThreadVerification.java:30) ~[classes/:na]
+Caused by: java.lang.IllegalStateException: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@32a3fc36 has been closed already
+	at org.springframework.context.support.AbstractApplicationContext.assertBeanFactoryActive(AbstractApplicationContext.java:1114) ~[spring-context-6.0.4.jar:6.0.4]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1135) ~[spring-context-6.0.4.jar:6.0.4]
+	at org.springframework.boot.context.properties.BoundConfigurationProperties.get(BoundConfigurationProperties.java:78) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBinder.getHandler(ConfigurationPropertiesBinder.java:131) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBinder.getBindHandler(ConfigurationPropertiesBinder.java:112) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBinder.bind(ConfigurationPropertiesBinder.java:92) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.bind(ConfigurationPropertiesBindingPostProcessor.java:96) ~[spring-boot-3.0.2.jar:3.0.2]
+	... 50 common frames omitted
+
+2023-03-02T08:48:03.230+01:00  INFO 2328 --- [http-nio-8080-exec-7] com.progetto.security.FilterJWT          : FILTER JWT ACTIVE...
+2023-03-02T08:48:03.233+01:00  INFO 2328 --- [http-nio-8080-exec-7] c.p.security.UserCredentialService       : THE CLIENT LOGGING: ClientBank [id=qicmfGyjS6KB9s9yBVCyNw1677662372902, firstName=Andrea, lastName=Laera, email=andrealaera01@gmail.com, password=$2a$11$NPgZYkKYgIu8Z1K9zzE7x.Kr8VZSwMKfcIqQjFB.bp..k5p2x9pEm, borningDate=1999-06-22, panCode=JMCAN0TbWg1+vh+DnCxF1g==, status=IS VERIFICATING, creationDate=2023-03-01, expirationDate=2028-03-01 ]
+2023-03-02T08:49:37.825+01:00  INFO 2328 --- [http-nio-8080-exec-8] com.progetto.security.FilterJWT          : FILTER JWT ACTIVE...
+2023-03-02T08:49:37.831+01:00  INFO 2328 --- [http-nio-8080-exec-8] c.p.security.UserCredentialService       : THE CLIENT LOGGING: ClientBank [id=qicmfGyjS6KB9s9yBVCyNw1677662372902, firstName=Andrea, lastName=Laera, email=andrealaera01@gmail.com, password=$2a$11$NPgZYkKYgIu8Z1K9zzE7x.Kr8VZSwMKfcIqQjFB.bp..k5p2x9pEm, borningDate=1999-06-22, panCode=JMCAN0TbWg1+vh+DnCxF1g==, status=IS VERIFICATING, creationDate=2023-03-01, expirationDate=2028-03-01 ]
+2023-03-02T08:49:37.836+01:00  INFO 2328 --- [http-nio-8080-exec-8] c.p.security.UserCredentialService       : THE ADMIN LOGGING: AdminBank [id=##ADMIN-AUlogFgPRq-qSSrV79iJHA1677667903989, firstName=Giorgio, lastName=Mastrota, password=$2a$11$RKPxtQBVay9Y3j4XmY/j4uBYjeWsKO4T2HZRKIESgEl15FWGNxvSG, creationDate=2023-03-01 11:51:43.989]
+2023-03-02T08:50:41.150+01:00  INFO 2328 --- [http-nio-8080-exec-1] com.progetto.security.FilterJWT          : FILTER JWT ACTIVE...
+2023-03-02T08:50:41.161+01:00  INFO 2328 --- [http-nio-8080-exec-1] c.p.security.UserCredentialService       : THE ADMIN LOGGING: AdminBank [id=##ADMIN-AUlogFgPRq-qSSrV79iJHA1677667903989, firstName=Giorgio, lastName=Mastrota, password=$2a$11$RKPxtQBVay9Y3j4XmY/j4uBYjeWsKO4T2HZRKIESgEl15FWGNxvSG, creationDate=2023-03-01 11:51:43.989]
+2023-03-02T08:50:42.535+01:00  INFO 2328 --- [http-nio-8080-exec-1] com.progetto.logic.ExcelGeneratorUtils   : [BankAccount [id=ZbkozKyQTXSozut9osBekQ1677662355388, iban=pLaK/8GRQ5ibIdhto3Hoscwh5Vgkgk2/antDvORf4bc=, amount=0.0, currency=EURO, dateCreationAccount=2023-03-01, clientBank=ClientBank [id=qPjz9tb8QdqIlAO-CkvN5g1677662355381, firstName=Andrea, lastName=Laera, email=andrealaera0@gmail.com, password=$2a$11$67b/xSS5oIP8q4CWLcWQ9.TfwdLodbl5ns7353PcPkri/OgGvG2e6, borningDate=1999-06-22, panCode=yJRCiFQMMCzr+VaHl6HITw==, status=IS VERIFICATING, creationDate=2023-03-01, expirationDate=2028-03-01 ]], BankAccount [id=0jaJCm6qSqGgFAF_Ls__LA1677662372907, iban=laE0ozGSo/y9cvg1y8pMwkPk37CAjpOWi53EWK6Ihw0=, amount=0.0, currency=EURO, dateCreationAccount=2023-03-01, clientBank=ClientBank [id=qicmfGyjS6KB9s9yBVCyNw1677662372902, firstName=Andrea, lastName=Laera, email=andrealaera01@gmail.com, password=$2a$11$NPgZYkKYgIu8Z1K9zzE7x.Kr8VZSwMKfcIqQjFB.bp..k5p2x9pEm, borningDate=1999-06-22, panCode=JMCAN0TbWg1+vh+DnCxF1g==, status=IS VERIFICATING, creationDate=2023-03-01, expirationDate=2028-03-01 ]], BankAccount [id=mx-0TOCJSuGDrNww4RiYug1677663190211, iban=kxuTdsUi/3j0B5x3B0U0CnWXSbusueNFp6cimfeZa1A=, amount=0.0, currency=EURO, dateCreationAccount=2023-03-01, clientBank=ClientBank [id=N-iobuUKS7Ke-EI7RX2IsA1677663190197, firstName=Andrea, lastName=Laera, email=andrealaera011@gmail.com, password=$2a$11$462cpY/pf5578/NYYrMaPuNUjRCHXec27UbyFEUBc70QN8tAKoD6u, borningDate=1999-06-22, panCode=t8VCPk6mX/neiOBmuC0rdw==, status=IS VERIFICATING, creationDate=2023-03-01, expirationDate=2028-03-01 ]], BankAccount [id=GMa52uwHRzGegM9pt-aTJQ1677681429436, iban=a2WBHB8u0lqzKaO4NagvpUcx3xUPYkwF20WP4zGtpFM=, amount=0.0, currency=EURO, dateCreationAccount=2023-03-01, clientBank=ClientBank [id=WeNYk49WQACMEOeLeY18HA1677681429381, firstName=Andrea, lastName=Laera, email=andrealaera0111@gmail.com, password=$2a$11$l33ijTN3zFr.8Vz34OjrHOfGrkhIh2S9mGCzJxfvU3IeiCQivboeu, borningDate=1999-06-22, panCode=ULkbEHOZ6Q0tGgmoFoC1Ew==, status=IS VERIFICATING, creationDate=2023-03-01, expirationDate=2028-03-01 ]], BankAccount [id=U730W3G0SwKks7WehniSqg1677742965294, iban=jGprXzdW4KXmp2s9xR30bNgfDzi5OYm1zTWdx0Vjx9Q=, amount=0.0, currency=EURO, dateCreationAccount=2023-03-02, clientBank=ClientBank [id=VKyBk1GFSB696Vzr6gd-kg1677742965247, firstName=Andrea, lastName=Laera, email=andrealaera01111@gmail.com, password=$2a$11$8B/ghmOaQ8sH4AdkTDx5p.aodmYnFltu3pRAjM5pfOXK3H9KFnT32, borningDate=1999-06-22, panCode=pktwIsmAGln/b52CGbl5kw==, status=IS VERIFICATING, creationDate=2023-03-02, expirationDate=2028-03-02 ]]]
+2023-03-02T08:50:42.568+01:00  INFO 2328 --- [http-nio-8080-exec-1] com.progetto.logic.ExcelGeneratorUtils   : SIAMO DENTRO
+2023-03-02T08:50:42.571+01:00  INFO 2328 --- [http-nio-8080-exec-1] com.progetto.logic.ExcelGeneratorUtils   : LIST OF TRANSACTION []
+2023-03-02T08:51:00.931+01:00  INFO 2328 --- [http-nio-8080-exec-4] com.progetto.security.FilterJWT          : FILTER JWT ACTIVE...
+2023-03-02T08:51:00.949+01:00  INFO 2328 --- [http-nio-8080-exec-4] c.p.security.UserCredentialService       : THE ADMIN LOGGING: AdminBank [id=##ADMIN-AUlogFgPRq-qSSrV79iJHA1677667903989, firstName=Giorgio, lastName=Mastrota, password=$2a$11$RKPxtQBVay9Y3j4XmY/j4uBYjeWsKO4T2HZRKIESgEl15FWGNxvSG, creationDate=2023-03-01 11:51:43.989]
+2023-03-02T08:54:34.130+01:00  INFO 2328 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-ANDREI-2, groupId=ANDREI] Node -1 disconnected.
+2023-03-02T08:56:22.353+01:00  INFO 2328 --- [kafka-producer-network-thread | producer-2] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-2] Node -1 disconnected.
+2023-03-02T09:45:34.116+01:00  INFO 2328 --- [scheduling-1] com.progetto.repetitive.ReUseOperation   : REVERSAL CHECK STARTING...
+2023-03-02T09:45:34.150+01:00  INFO 2328 --- [scheduling-1] com.progetto.repetitive.ReUseOperation   : TRANSACTION WITH STATUS ANOMAL NOT FOUND
+2023-03-02T09:45:34.155+01:00  INFO 2328 --- [scheduling-1] com.progetto.repetitive.ReUseOperation   : NO CLIENT WITHOUT VETRIFICATION ACCOUNT FOUNDED
+2023-03-02T09:45:34.156+01:00  INFO 2328 --- [scheduling-1] com.progetto.repetitive.ReUseOperation   : REVERSAL CHECK ENDING...
+2023-03-02T09:55:15.356+01:00  INFO 2328 --- [http-nio-8080-exec-5] com.progetto.security.FilterJWT          : FILTER JWT ACTIVE...
+2023-03-02T09:55:15.361+01:00  INFO 2328 --- [http-nio-8080-exec-5] c.p.security.UserCredentialService       : THE ADMIN LOGGING: AdminBank [id=##ADMIN-AUlogFgPRq-qSSrV79iJHA1677667903989, firstName=Giorgio, lastName=Mastrota, password=$2a$11$RKPxtQBVay9Y3j4XmY/j4uBYjeWsKO4T2HZRKIESgEl15FWGNxvSG, creationDate=2023-03-01 11:51:43.989]
+2023-03-02T09:55:15.365+01:00 ERROR 2328 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2023-03-02T07:54:37Z. Current time: 2023-03-02T08:55:15Z, a difference of 3638364 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at com.progetto.security.JWTokenService.extractAllClaims(JWTokenService.java:44) ~[classes/:na]
+	at com.progetto.security.JWTokenService.extractClaim(JWTokenService.java:39) ~[classes/:na]
+	at com.progetto.security.JWTokenService.extractUsername(JWTokenService.java:31) ~[classes/:na]
+	at com.progetto.security.JWTokenService.validateToken(JWTokenService.java:52) ~[classes/:na]
+	at com.progetto.security.FilterJWT.doFilterInternal(FilterJWT.java:44) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:351) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+

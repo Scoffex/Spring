@@ -1,0 +1,622 @@
+{
+	"info": {
+		"_postman_id": "b0d0e02a-f8f2-48cc-9025-daeaa760fc64",
+		"name": "Spring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SpringAdmin",
+			"item": [
+				{
+					"name": "Export Excel to Database",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/spring/admin/excel/export-to-database",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring",
+								"admin",
+								"excel",
+								"export-to-database"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Export Database to Excel",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"excelPath\": \"C:\\\\Users\\\\alaera\\\\Desktop\\\\ExcelFromDb.xlsx\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/spring/admin/excel/export-to-excel",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring",
+								"admin",
+								"excel",
+								"export-to-excel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Download Excel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/spring/admin/excel/download-excel",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring",
+								"admin",
+								"excel",
+								"download-excel"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SpringBankAccount",
+			"item": [
+				{
+					"name": "SaveBankAccount",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/spring/account/save/19620114",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring",
+								"account",
+								"save",
+								"19620114"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteBankAccount",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/spring/account/delete/IT42A5876574398738629910216",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring",
+								"account",
+								"delete",
+								"IT42A5876574398738629910216"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "getAllAccount",
+							"host": [
+								"getAllAccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindByIban",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/spring/account/getByIban/IT19A5876574398588487147587",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring",
+								"account",
+								"getByIban",
+								"IT19A5876574398588487147587"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SpringClientAnagrafic",
+			"item": [
+				{
+					"name": "FindByEmail",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/spring/client/findByEmail/andrealaera0@gmail.com",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring",
+								"client",
+								"findByEmail",
+								"andrealaera0@gmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteByPanCode",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/spring/client/delete/5983196837",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring",
+								"client",
+								"delete",
+								"5983196837"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Andrea\",\r\n    \"surname\":\"Laera\",\r\n    \"birth\":\"1999-06-22\",\r\n    \"password\":\"&Endriu00da\",\r\n    \"email\":\"andrealaera5adaaaa55@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/spring/client/save",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring",
+								"client",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"LOLLO\",\r\n    \"surname\":\"POLLO\",\r\n    \"birth\":\"1999-06-22\",\r\n    \"password\":\"ASD\",\r\n    \"email\":\"andrealaerasd@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/spring/update/103",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring",
+								"update",
+								"103"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/spring/client/getAll",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring",
+								"client",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SpringLogInJwt",
+			"item": [
+				{
+					"name": "AutenticazioneUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"andrealaera01@gmail.com\",\r\n    \"password\":\"&Endriu99\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/spring/jwt/auth",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring",
+								"jwt",
+								"auth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AutenticazioneAdmin",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"##ADMIN-AUlogFgPRq-qSSrV79iJHA1677667903989\",\r\n    \"password\":\"Accedi1$\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/spring/jwt/auth",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring",
+								"jwt",
+								"auth"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SpringOperation",
+			"item": [
+				{
+					"name": "balanceOfAllAccount",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/spring/operation/balanceAll/6198621625",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring",
+								"operation",
+								"balanceAll",
+								"6198621625"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "balanceOfOneAccount",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/spring/operation/balanceSingle/IT19A5876574398588487147587",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring",
+								"operation",
+								"balanceSingle",
+								"IT19A5876574398588487147587"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deposit/Withdrawl",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": 2112,\r\n    \"iban\": \"IT02A5876574398989296087167\",\r\n    \"operation\":\"deposit\",\r\n    \"status\":\"check\",\r\n    \"atmCode\":\"1234567891\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/spring/operation/transaction",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring",
+								"operation",
+								"transaction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConfirmOperation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"atmCode\": \"1234567891\",\r\n    \"operationTime\": \"2023-02-16T10:13:03.584+00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/spring/operation/transaction/confirmed",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring",
+								"operation",
+								"transaction",
+								"confirmed"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SpringTransaction",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/spring/transaction/getAll",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring",
+								"transaction",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/spring/transaction/save",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring",
+								"transaction",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/spring/transaction/delete/15",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring",
+								"transaction",
+								"delete",
+								"15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByIban",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/spring/transaction/findByIban/IT19A5876574398588487147587",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring",
+								"transaction",
+								"findByIban",
+								"IT19A5876574398588487147587"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SpringVerificationToken",
+			"item": [
+				{
+					"name": "Verification/token",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/spring/verification/verifyRegistration/360334b9-6e82-4c78-86ea-3a797c1b361c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring",
+								"verification",
+								"verifyRegistration",
+								"360334b9-6e82-4c78-86ea-3a797c1b361c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
