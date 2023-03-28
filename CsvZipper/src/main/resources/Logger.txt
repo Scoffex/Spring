@@ -1,0 +1,21 @@
+2023-03-28T10:50:03.449+02:00  INFO 6084 --- [restartedMain] i.auriga.scheduler.CsvZipperApplication  : Starting CsvZipperApplication using Java 17.0.6 with PID 6084 (C:\Users\alaera\Desktop\SpringAll\workspace\CsvZipper\target\classes started by alaera in C:\Users\alaera\Desktop\SpringAll\workspace\CsvZipper)
+2023-03-28T10:50:03.449+02:00  INFO 6084 --- [restartedMain] i.auriga.scheduler.CsvZipperApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-03-28T10:50:03.549+02:00  INFO 6084 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-28T10:50:03.550+02:00  INFO 6084 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-28T10:50:03.560+02:00  INFO 6084 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-28T10:50:03.624+02:00  INFO 6084 --- [restartedMain] i.auriga.scheduler.CsvZipperApplication  : Started CsvZipperApplication in 0.188 seconds (process running for 294.051)
+2023-03-28T10:50:11.042+02:00  INFO 6084 --- [Thread-55] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-28T10:50:11.096+02:00  INFO 6084 --- [restartedMain] i.auriga.scheduler.CsvZipperApplication  : Starting CsvZipperApplication using Java 17.0.6 with PID 6084 (C:\Users\alaera\Desktop\SpringAll\workspace\CsvZipper\target\classes started by alaera in C:\Users\alaera\Desktop\SpringAll\workspace\CsvZipper)
+2023-03-28T10:50:11.096+02:00  INFO 6084 --- [restartedMain] i.auriga.scheduler.CsvZipperApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-03-28T10:50:11.193+02:00  INFO 6084 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-28T10:50:11.193+02:00  INFO 6084 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-28T10:50:11.201+02:00  INFO 6084 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-28T10:50:11.259+02:00  INFO 6084 --- [restartedMain] i.auriga.scheduler.CsvZipperApplication  : Started CsvZipperApplication in 0.177 seconds (process running for 301.687)
+2023-03-28T10:50:38.741+02:00  INFO 6084 --- [Thread-59] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-28T10:50:38.804+02:00  INFO 6084 --- [restartedMain] i.auriga.scheduler.CsvZipperApplication  : Starting CsvZipperApplication using Java 17.0.6 with PID 6084 (C:\Users\alaera\Desktop\SpringAll\workspace\CsvZipper\target\classes started by alaera in C:\Users\alaera\Desktop\SpringAll\workspace\CsvZipper)
+2023-03-28T10:50:38.804+02:00  INFO 6084 --- [restartedMain] i.auriga.scheduler.CsvZipperApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-03-28T10:50:38.921+02:00  INFO 6084 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-28T10:50:38.921+02:00  INFO 6084 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-28T10:50:38.931+02:00  INFO 6084 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-28T10:50:39.026+02:00  INFO 6084 --- [restartedMain] i.auriga.scheduler.CsvZipperApplication  : Started CsvZipperApplication in 0.237 seconds (process running for 329.453)
+2023-03-28T10:50:41.904+02:00  INFO 6084 --- [RMI TCP Connection(20)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
